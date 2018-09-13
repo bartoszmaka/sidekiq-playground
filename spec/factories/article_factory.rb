@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :article do
-    sequence(:title) { |n| "factory article ##{n}" }
+    sequence(:title) { |n| "factory_article_##{n}" }
     description { 'factoried description' }
     approved { true }
 

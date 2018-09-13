@@ -1,0 +1,31 @@
+<hr/>
+<%= link_to 'add', multiple_records_path, method: :post %>
+<%= link_to 'cleanup', multiple_records_path, method: :delete %>
+<hr/>
+
+<h3>Projects</h3>
+<ul>
+  <% projects.each do |project| %>
+    <li>
+      <pre><%= project.attributes %></pre>
+    </li>
+  <% end %>
+</ul>
+
+<h3>Writers</h3>
+<ul>
+  <% writers.each do |writer| %>
+    <li>
+      <pre><%= writer.attributes %></pre>
+    </li>
+  <% end %>
+</ul>
+
+<h3>Article</h3>
+<ul>
+  <% articles.each do |article| %>
+    <li>
+      <pre><%= article.attributes %></pre>
+    </li>
+  <% end %>
+</ul>

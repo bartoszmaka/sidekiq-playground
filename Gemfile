@@ -13,11 +13,12 @@ gem 'rails', '~> 5.1.6'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem 'factory_bot_rails'
+gem 'delayed_job_active_record'
 
 group :development, :test do
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
-  gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.8'
 end
 
