@@ -1,9 +1,9 @@
 add_new_records_job:
-  cron: "*/1 * * * *"
+  cron: "5 */4 * * *"
   class: "AddNewRecordsWorker"
   queue: "normal"
 
 clean_up_records_job:
-  cron: "*/5 * * * *"
+  cron: "0 12 * * *"
   class: "CleanUpRecordsWorker"
   queue: "other"
